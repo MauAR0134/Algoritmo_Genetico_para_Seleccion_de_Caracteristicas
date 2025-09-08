@@ -1,3 +1,5 @@
+import numpy as np
+from tdqm import trange
 
 # ------------------------------
 # Funciones básicas del AG
@@ -66,6 +68,7 @@ def mut_null(cromosoma, MUT_NULL_RATE):
 # ------------------------------
 # Algoritmo Genético
 # ------------------------------
+
 def algoritmo_genetico(modo):
     """
     Ejecuta el algoritmo genético y retorna el historial, mejores individuos,

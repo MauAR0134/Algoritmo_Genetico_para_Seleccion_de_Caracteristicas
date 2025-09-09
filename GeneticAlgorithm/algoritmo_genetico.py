@@ -137,7 +137,7 @@ def algoritmo_genetico(modo,LEGO, IND_LEN, POP_SIZE, POP_NUM, GENS, MUT_RATE=0.1
         "Tasa de Mutación": MUT_RATE,
         "Tasa de Mutación Nula": MUT_NULL_RATE,
         "Elitismo": ELITISM,
-        "LEGO_LEN": len(LEGO)
+        "Cantidad de Genes Disponibles": len(LEGO)
     }
     return df_historial, mejores_por_poblacion, mejor_global, parametros
 
@@ -205,3 +205,4 @@ def plot_ag_results(df_historial, mejor_global, fitness, parametros):
     plt.text(0.1, 0.7, parametros_str, fontsize=10, ha="left", va="top")
 
     plt.show()
+
